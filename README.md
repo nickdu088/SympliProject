@@ -1,11 +1,19 @@
 # SympliProject
 
-# Environment
+# Development Environment
 Visual Studio 2019 .Net Core 3.1 MVC
 
 No 3rd Party libraries are used except Moq for unit testing only.
 
-# Consideration
+# How to run
+1. Clone SympliProject to local drive
+2. Open SympliProject using Visual Studio 2019
+3. Build entire soultion
+4. Run WebAPI standalone exe
+5. Run Frontend
+5. Run unit test via Visual Studio Test Explorer
+
+# Design Consideration
 Split SympliProject into Frontend MVC implementation and Web API, which decouples frontend UI implemention from backend business logic.
 The benefits of this desgin include but not limited to
 >1. Frontend is exchangable into different implementions (eg, Angular, React) and different client devices (web browser, mobile app) without changing backend code

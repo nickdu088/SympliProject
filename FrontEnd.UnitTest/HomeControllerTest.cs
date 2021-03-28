@@ -44,7 +44,6 @@ namespace FrontEnd.UnitTest
             var homeController = new HomeController(mockLoggerObj.Object, httpClient);
             ViewResult result = (ViewResult)await homeController.Index("e-settlements", "www.sympli.com");
 
-            ////mock httpclient getAsync returns string
             ViewDataDictionary viewData = result.ViewData;
             Assert.AreEqual("3,4,", viewData["result"]);
             Assert.AreEqual("Index", result.ViewName);
@@ -58,7 +57,6 @@ namespace FrontEnd.UnitTest
             var homeController = new HomeController(mockLoggerObj.Object, httpClient);
             ViewResult result = (ViewResult)await homeController.Index("", "");
 
-            ////mock httpclient getAsync returns string
             ViewDataDictionary viewData = result.ViewData;
             Assert.AreEqual("keywords or url cannot be empty!", viewData["result"]);
             Assert.AreEqual("Index", result.ViewName);

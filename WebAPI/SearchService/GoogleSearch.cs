@@ -8,7 +8,7 @@ namespace WebAPI.SearchService
 {
     public class GoogleSearch : ISearchService
     {
-        //<div class="BNeawe UPmit AP7Wnd"></div>
+        //From google html each result item comes with <div class="BNeawe UPmit AP7Wnd"></div>
         private const string REGULAR_EXPRESSION_RECORD_MATCH_STRING = "<div class=\"BNeawe UPmit AP7Wnd\">[^<]*<\\/div>";
         private const int TOP_100_RECORDS = 100;
         private const string GoogleQueryString = "https://www.google.com.au/search?q={0}&num={1}";
