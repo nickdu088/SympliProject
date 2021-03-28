@@ -1,16 +1,17 @@
 # SympliProject
 
 # Development Environment
-Visual Studio 2019 .Net Core 3.1 MVC
+* Visual Studio 2019 
+* .Net Core 3.1 MVC
 
 No 3rd Party libraries are used except Moq for unit testing only.
 
 # How to run
-1. Clone SympliProject to local drive
+1. Clone SympliProject to the local drive
 2. Open SympliProject using Visual Studio 2019
-3. Build entire soultion
-4. Run WebAPI standalone exe
-5. Run Frontend
+3. Build the entire soultion
+4. Run the WebAPI standalone exe
+5. Run the Frontend
 5. Run unit test via Visual Studio Test Explorer
 
 # Design Consideration
