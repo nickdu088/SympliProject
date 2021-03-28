@@ -3,19 +3,17 @@
 # Environment
 Visual Studio 2019 .Net Core 3.1 MVC
 
-No 3rd Party libraries that are not part of the .Net framework
-
-*3rd Party library, Moq, is used for Unit Testing only*
+No 3rd Party libraries are used except Moq for unit testing only.
 
 # Consideration
-Split SympliProject into Front End and Web API two parts. This gives the flexiblity in future development. 
-
-Microservice brings lots of benefits:
->1. Highly maintainable and testable
->2. Loosely coupled
->3. Independently deployable
->4. Organized around business capabilities
->5. Owned by a small team
+Split SympliProject into Frontend MVC implementation and Web API, which decouples frontend UI implemention from backend business logic.
+The benefits of this desgin include but not limited to
+>1. Frontend is exchangable into different implementions (eg, Angular, React) and different client devices (web browser, mobile app) without changing backend code
+>2. Both frontend and backend can be developed and released independently
+>3. Both frontend and backend can be deployed seperatly into containers and scale up and down according to the demand
+>4. Enable agilibity within the organization
+>
+Unit tests are created for both both Frontend and Web API, which not only ensure the quality of the code but also enable the pipeline of CI/CD.
 
 # Known limitation
 1. No Web API authentication or authorization
